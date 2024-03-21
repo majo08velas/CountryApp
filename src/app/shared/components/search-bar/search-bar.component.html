@@ -1,0 +1,10 @@
+<!-- (keyup)="emitValue()"
+name="searchValue"
+[(ngModel)]="searchValue"  -->
+<input type="text"
+      [placeholder]="placeHolderFromParent"
+      class="form-control"
+      (keyup)="onKeyPressed(txtInput.value)"
+      [value]="initialValue"
+      #txtInput
+>
